@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent">
+        <h1>Grocery Store</h1>
+      </div>
+      <div class="left-frame">
+        <img id="product-nav" src="images/tabnew.png" alt="" usemap="#store-nav" />
+        <img id="product-node" src="" alt="" />
+        <map name="store-nav">
+          <area shape="rect" href="#" alt="Frozen Food" coords="0,0,200,130" onmouseover="frozenFood()" />
+          <area shape="rect" href="#" alt="Fresh Food" coords="0,140,200,260" onmouseover="freshFood()" />
+          <area shape="rect" href="#" alt="Beverages" coords="0,265,200,390" onmouseover="beverages()" />
+          <area shape="rect" href="#" alt="Home Health" coords="0,400,200,520" onmouseover="homeHealth()" />
+          <area shape="rect" href="#" alt="Pet Food" coords="0,525,220,645" onmouseover="petFood()" />
+        </map>
+
+        <map name="frozen-food">
+          <area shape="rect" href="#" alt="Hamburger Patties" coords="45,7,210,80" onclick="getData('hamburger patties')" />
+          <area shape="rect" href="#" alt="Fish Fingers 500g" coords="45,150,210,210" onclick="getData('fish finger 500 gram')" />
+          <area shape="rect" href="#" alt="Fish Fingers 1000g" coords="45,220,210,280" onclick="getData('fish finger 1000 gram')" />
+          <area shape="rect" href="#" alt="Shelled Prawns" coords="45,310,210,385" onclick="getData('shelled prawn')" />
+          <area shape="rect" href="#" alt="Ice Cream 1L" coords="45,460,210,525" onclick="getData('tube ice 1 litre')" />
+          <area shape="rect" href="#" alt="Ice Cream 2L" coords="45,530,210,600" onclick="getData('tube ice 2 litre')" />
+        </map>
+
+        <map name="fresh-food">
+          <area shape="rect" href="#" alt="TBone Steak" coords="45,17,210,70" onclick="getData('tbone steak')" />
+          <area shape="rect" href="#" alt="Cheddar Cheese 500g" coords="45,135,210,185" onclick="getData('cheese 500g')" />
+          <area shape="rect" href="#" alt="Cheddar Cheese 1000g" coords="45,195,210,245" onclick="getData('cheese 1000g')" />
+          <area shape="rect" href="#" alt="Navel Oranges" coords="45,270,210,320" onclick="getData('oranges')" />
+          <area shape="rect" href="#" alt="Bananas" coords="45,340,210,390" onclick="getData('bananas')" />
+          <area shape="rect" href="#" alt="Grapes" coords="45,410,210,460" onclick="getData('grapes')" />
+          <area shape="rect" href="#" alt="Apples" coords="45,480,210,530" onclick="getData('apples')" />
+          <area shape="rect" href="#" alt="Peaches" coords="45,550,210,600" onclick="getData('peaches')" />
+        </map>
+
+        <map name="beverages">
+          <area shape="rect" href="#" alt="Coffee 200 grams" coords="45,138,210,187" onclick="getData('coffee 200g')" />
+          <area shape="rect" href="#" alt="Coffee 500 grams" coords="45,195,210,245" onclick="getData('coffee 500g')" />
+          <area shape="rect" href="#" alt="Earl Grey Tea Bags pack 25" coords="45,337,210,385" onclick="getData('earl grey 25pcs')" />
+          <area shape="rect" href="#" alt="Earl Grey Tea Bags pack 100" coords="45,395,210,445" onclick="getData('earl grey 100pcs')" />
+          <area shape="rect" href="#" alt="Earl Grey Tea Bags pack 200" coords="45,455,210,505" onclick="getData('earl grey 200pcs')" />
+          <area shape="rect" href="#" alt="Chocolate Bar" coords="45,525,210,575" onclick="getData('chocolate bar')" />
+        </map>
+
+        <map name="home-health">
+          <area shape="rect" href="#" alt="Bath Soap" coords="42,65,208,118" onclick="getData('bath soap')" />
+          <area shape="rect" href="#" alt="Panadol pack 24" coords="42,185,208,226" onclick="getData('panadol pack 24')" />
+          <area shape="rect" href="#" alt="Panadol bottle 50" coords="42,230,208,270" onclick="getData('panadol bottle 50')" />
+          <area shape="rect" href="#" alt="Washing powder" coords="42,295,208,345" onclick="getData('washing powder')" />
+          <area shape="rect" href="#" alt="Garbage bags small(pack 10)" coords="40,410,206,465" onclick="getData('garbage bag S-10pcs')" />
+          <area shape="rect" href="#" alt="Garbage bags large(pack 50)" coords="40,470,206,520" onclick="getData('garbage bag L-50pcs')" />
+          <area shape="rect" href="#" alt="Laundry bleach" coords="40,540,206,595" onclick="getData('laundry bleach')" />
+        </map>
+
+        <map name="pet-food">
+          <area shape="rect" href="#" alt="Bird Food" coords="42,240,208,289" onclick="getData('bird food')" />
+          <area shape="rect" href="#" alt="Cat Food" coords="42,310,208,360" onclick="getData('cat food')" />
+          <area shape="rect" href="#" alt="Dry Dog Food 1kg pack" coords="40,430,206,482" onclick="getData('dog food 1kg')" />
+          <area shape="rect" href="#" alt="Dry Dog Food 5kg pack" coords="40,487,206,542" onclick="getData('dog food 5kg')" />
+          <area shape="rect" href="#" alt="Fish Food" coords="40,561,206,610" onclick="getData('fish food')" />
+        </map>
+      </div>
+      <div class="right-frame">
+        <div class="top-right-frame">
+          <h1>dsa</h1>
+        </div>
+        <div class="bottom-right-frame">
+          <h1>da</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
